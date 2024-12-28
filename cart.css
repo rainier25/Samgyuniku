@@ -274,7 +274,6 @@ section .main_btn:hover i{
       align-items: center;
   }
   }
-  
   .cart-container {
     max-width: 800px;
     margin: -200px auto 50px;
@@ -324,18 +323,38 @@ section .main_btn:hover i{
     align-items: center;
 }
 
+/* Ensure the name and price are aligned */
 .cart-item .item-info h3 {
     margin: 0;
     font-size: 16px;
+    flex-grow: 1;
 }
 
 .cart-item .item-info p {
     margin: 0;
     color: #666;
+    font-size: 14px;
+    text-align: right; /* Align price to the right */
+    margin-right: 20px;
+}
+
+.cart-item button {
+    padding: 5px 8px;
+    background-color: #4085a0; /* Red background for remove button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
 }
 
 #checkout-button {
-    background: #528393;
+    background: #4085a0;
     color: #fff;
     border: none;
     margin-top: 20px;
